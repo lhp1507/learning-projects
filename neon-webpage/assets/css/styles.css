@@ -3,3 +3,149 @@
     padding: 0;
     font-family: sans-serif;
 }
+
+/* ===== VARIABLES CSS ===== */
+/* === font & typo === */
+:root {
+    --font-regular: 400;
+    --font-semi: 600;
+    --font-bold: 700;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.75rem;
+    --h1-font-size: 4.35rem;
+    --h2-font-size: 4.75rem;
+}
+/* === colors === */
+:root {
+    --inner-color: #768aff;
+    --outer-color: #0f228a;
+    --text-color: #ccc;
+}
+
+/* ===== BASE ===== */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+h1,
+h2,
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+
+/* ===== CLASS CSS ===== */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(var(--inner-color), var(--outer-color));
+    color: #fff;
+    position: relative;
+}
+
+/* ===== LOGO ===== */
+.page__top {
+    margin-left: 7%;
+    height: 100px;
+    display: inline-block;
+}
+.page__logo {
+    height: 100%;
+    display: block;
+}
+.page__logo img {
+    height: 100%;
+    width: auto;
+}
+
+/* ===== CONTENTS ===== */
+.page__content {
+    max-width: 600px;
+    margin-left: 15%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 2;
+}
+.page__title {
+    font-size: var(--h1-font-size);
+    margin: 0.5rem 0;
+    font-weight: var(--font-regular);
+}
+.page__subtitle {
+    font-size: var(--h2-font-size);
+    margin: 1rem 0;
+    opacity: 0.6;
+}
+.page__text {
+    font-size: var(--small-font-size);
+    margin: 1rem 0;
+    color: var(--text-color);
+    line-height: 1.2rem;
+}
+.page__link {
+    color: #fff;
+    display: inline-block;
+    margin: 1.5rem 0;
+    position: relative;
+}
+.page__link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.page__link:hover::after {
+    width: 100px;
+}
+.page__date {
+    position: absolute;
+    top: 55%;
+    left: -25%;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+.page__date::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* ===== FEATURED IMAGE ===== */
+.page__featured {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    max-width: 500px;
+    z-index: 1;
+}
+.page__search {
+    position: absolute;
+    bottom: 8%;
+    left: 9%;
+    width: 25px;
+    opacity: 0.5;
+}
+.page__search img {
+    cursor: pointer;
+}
