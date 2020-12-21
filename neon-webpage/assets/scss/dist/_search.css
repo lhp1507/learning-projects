@@ -1,0 +1,10 @@
+.page__search {
+  position: absolute;
+  bottom: 8%;
+  left: 9%;
+  width: 25px;
+  opacity: 0.5;
+}
+.page__search img {
+  cursor: pointer;
+}

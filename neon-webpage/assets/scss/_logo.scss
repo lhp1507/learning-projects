@@ -1,0 +1,15 @@
+.page__top {
+    margin-left: 7%;
+    height: 100px;
+    display: inline-block;
+
+    .page__logo {
+        height: 100%;
+        display: block;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}

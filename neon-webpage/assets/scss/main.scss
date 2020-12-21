@@ -1,0 +1,25 @@
+@import "vars";
+
+/*===== BASE =====*/
+@import "base";
+
+/*===== CONTAINER =====*/
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient($inner-color, $outer-color);
+    color: $container-color;
+    position: relative;
+
+    // LOGO
+    @import "logo";
+
+    // CONTENT
+    @import "content";
+
+    // FEATURED IMAGE
+    @import "featured";
+
+    // SEARCH
+    @import "search";
+}
