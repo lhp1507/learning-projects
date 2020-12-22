@@ -10,5 +10,79 @@
     <link rel="stylesheet" href="assets/sass/main.css" />
   </head>
   <body>
+    <section>
+      <div class="circle"></div>
+
+      <header>
+        <a href="#">
+          <img src="assets/img/logo.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New?</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            It's not just Coffee <br />
+            It's <span>Starbucks</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos asperiores voluptates reiciendis maxime
+            reprehenderit necessitatibus veniam saepe, magnam, cum recusandae accusantium nobis minus nesciunt a debitis
+            veritatis repellat. Tempore, iusto.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div class="imgBox">
+          <img src="assets/img/img1.png" alt="starbucks" class="starbucks" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            src="assets/img/thumb1.png"
+            alt="thumb1"
+            onClick="imgSlider('assets/img/img1.png'); changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb2.png"
+            alt="thumb2"
+            onClick="imgSlider('assets/img/img2.png'); changeCircleColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb3.png"
+            alt="thumb3"
+            onClick="imgSlider('assets/img/img3.png'); changeCircleColor('#d752b1')"
+          />
+        </li>
+      </ul>
+
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="assets/img/facebook.png" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/twitter.png" alt="twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/instagram.png" alt="instagram" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== SCRIPTS ===== -->
+    <!-- === main.js === -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
