@@ -1,0 +1,106 @@
+@media (max-width: 991px) {
+  .noscroll {
+    overflow: hidden;
+  }
+
+  section {
+    padding: 20px 20px 120px;
+
+    header {
+      padding: 20px;
+
+      .logo {
+        max-width: 60px;
+      }
+
+      .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../img/menu.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        transition: ease-in-out 0.25s;
+        z-index: 11;
+
+        &.active {
+          background: url(../img/close.png) no-repeat;
+          background-size: 20px;
+          background-position: center;
+          position: fixed;
+          right: 37px;
+        }
+      }
+
+      ul.navigation {
+        display: none;
+
+        &.active {
+          // overflow-y: hidden;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: $bg-color;
+          z-index: 10;
+        }
+
+        li {
+          a {
+            font-size: 1.5em;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      margin-top: 100px;
+
+      .textBox {
+        max-width: 100%;
+
+        h2 {
+          font-size: 2.5em;
+          margin-bottom: 15px;
+        }
+      }
+
+      .imgBox {
+        max-width: 100%;
+        justify-content: center;
+
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+
+    .thumb {
+      li {
+        img {
+          max-width: 40px;
+        }
+      }
+    }
+
+    .circle {
+      clip-path: circle(400px at center bottom);
+    }
+
+    .sci {
+      background: $span-color;
+      right: 0;
+      width: 50px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}

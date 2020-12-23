@@ -1,0 +1,52 @@
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .textBox {
+    position: relative;
+    max-width: 600px;
+
+    h2 {
+      color: $text-color;
+      font-size: 4em;
+      line-height: 1.4em;
+      font-weight: $font-medium;
+
+      span {
+        color: $span-color;
+        font-size: 1.2em;
+        font-weight: $font-black;
+      }
+    }
+
+    p {
+      color: $text-color;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 20px;
+      background: $span-color;
+      color: $bg-color;
+      border-radius: 40px;
+      font-weight: $font-medium;
+      letter-spacing: 1px;
+    }
+  }
+
+  .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+
+    img {
+      max-width: 340px;
+    }
+  }
+}

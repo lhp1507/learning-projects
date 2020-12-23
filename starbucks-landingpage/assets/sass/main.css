@@ -51,6 +51,9 @@ section {
   background: #fff;
   /*== HEADER ==*/
   /*== CONTENT ==*/
+  /*== THUMB ==*/
+  /*== SOCIAL ICONS ==*/
+  /*== CIRCLE ==*/
 }
 
 section header {
@@ -68,7 +71,7 @@ section header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
+  z-index: 9;
 }
 
 section header .logo {
@@ -220,5 +223,106 @@ section .circle {
   background: #017143;
   -webkit-clip-path: circle(600px at right 800px);
           clip-path: circle(600px at right 800px);
+}
+
+/*===== MEDIA QUERY =====*/
+@media (max-width: 991px) {
+  .noscroll {
+    overflow: hidden;
+  }
+  section {
+    padding: 20px 20px 120px;
+  }
+  section header {
+    padding: 20px;
+  }
+  section header .logo {
+    max-width: 60px;
+  }
+  section header .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(../img/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    -webkit-transition: ease-in-out 0.25s;
+    transition: ease-in-out 0.25s;
+    z-index: 11;
+  }
+  section header .toggle.active {
+    background: url(../img/close.png) no-repeat;
+    background-size: 20px;
+    background-position: center;
+    position: fixed;
+    right: 37px;
+  }
+  section header ul.navigation {
+    display: none;
+  }
+  section header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+  section header ul.navigation li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  section .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+  }
+  section .content .textBox {
+    max-width: 100%;
+  }
+  section .content .textBox h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  section .content .imgBox {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .content .imgBox img {
+    max-width: 300px;
+  }
+  section .thumb li img {
+    max-width: 40px;
+  }
+  section .circle {
+    -webkit-clip-path: circle(400px at center bottom);
+            clip-path: circle(400px at center bottom);
+  }
+  section .sci {
+    background: #017143;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

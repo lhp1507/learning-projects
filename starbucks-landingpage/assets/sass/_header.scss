@@ -1,0 +1,30 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+
+  .logo {
+    position: relative;
+    max-width: 80px;
+  }
+
+  ul {
+    position: relative;
+    display: flex;
+
+    li {
+      a {
+        display: inline-block;
+        margin-left: 40px;
+        color: $text-color;
+        font-weight: $font-regular;
+      }
+    }
+  }
+}
