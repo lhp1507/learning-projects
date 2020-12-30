@@ -1,2 +1,2 @@
 Screenshot:
-[!(bedimcode-portfolio\bedimcode-portfolio.png)]
+[![bedimcode-portfolio](bedimcode-portfolio\bedimcode-portfolio.png)]
